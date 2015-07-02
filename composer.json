@@ -14,10 +14,10 @@
       "aurora-framework/aurora": "dev-master"
    },
    "config": {
-	    "preferred-install": "dist"
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
+      "preferred-install": "dist"
+   },
+   "minimum-stability": "dev",
+   "prefer-stable": true,
    "autoload": {
       "psr-4": {
          "App\\": "App//"
