@@ -1,0 +1,42 @@
+{
+   "name": "Application",
+   "description": "Application in Aurora",
+   "license": "MIT",
+
+   "require-dev": {
+      "php": ">=5.5.0",
+
+      "aurora-framework/aurora": "1.*",
+      "aurora-framework/router": "1.*",
+      "aurora-framework/session": "1.*",
+      "aurora-framework/helper": "1.*",
+      "aurora-framework/config": "1.*",
+      "aurora-framework/service": "1.*",
+      "aurora-framework/http": "1.*",
+      "aurora-framework/di": "1.*"
+
+   },
+   "require-dev": {
+      "php": ">=5.5.0",
+
+      "aurora-framework/aurora": "dev-master",
+      "aurora-framework/router": "dev-master",
+      "aurora-framework/session": "dev-master",
+      "aurora-framework/helper": "dev-master",
+      "aurora-framework/config": "dev-master",
+      "aurora-framework/service": "dev-master",
+      "aurora-framework/http": "dev-master",
+      "aurora-framework/di": "dev-master"
+
+   },
+   "config": {
+	    "preferred-install": "dist"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+   "autoload": {
+      "psr-4": {
+         "App\\": "App//"
+      }
+   }
+}

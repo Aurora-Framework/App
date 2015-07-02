@@ -1,0 +1,7 @@
+{
+	"hello": "Hi :name",
+	"message": {
+		"new": "You have :count new from :user",
+		"old": "You missed :count old messages"
+	}
+}
