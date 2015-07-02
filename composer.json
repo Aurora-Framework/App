@@ -3,7 +3,7 @@
    "description": "Application in Aurora",
    "license": "MIT",
 
-   "require-dev": {
+   "require": {
       "php": ">=5.5.0",
 
       "aurora-framework/aurora": "1.*"
