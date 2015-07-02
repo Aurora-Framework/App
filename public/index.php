@@ -16,7 +16,7 @@ define('ROOT', __DIR__."/../");
 /**
 * Use auto-loader
 */
-include ROOT."Vendor/autoload.php";
+include ROOT."vendor/autoload.php";
 
 /**
  * Set the configuration
