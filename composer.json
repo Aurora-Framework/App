@@ -2,7 +2,6 @@
    "name": "aurora-framework/app",
    "description": "Application in Aurora",
    "license": "MIT",
-
    "require": {
       "php": ">=5.5.0",
 
@@ -13,10 +12,6 @@
 
       "aurora-framework/aurora": "dev-master"
    },
-   "config": {
-      "preferred-install": "dist"
-   },
-   "minimum-stability": "dev",
    "prefer-stable": true,
    "autoload": {
       "psr-4": {
