@@ -6,7 +6,7 @@
       "php": ">=5.6.8",
 
       "aurora-framework/aurora": "1.*",
-      "twig/twig:": "~1.0",
+      "twig/twig": "~1.0",
       "aurora-framework/twig": "1.*",
       "aurora-framework/voodorm": "1.*"
    },
@@ -14,7 +14,7 @@
       "php": ">=5.6.8",
 
       "aurora-framework/aurora": "dev-master",
-      "twig/twig:": "dev-master",
+      "twig/twig": "dev-master",
       "aurora-framework/twig": "dev-master"
    },
    "prefer-stable": true,
