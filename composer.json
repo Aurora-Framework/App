@@ -5,8 +5,8 @@
    "require": {
       "php": ">=5.6.8",
 
-      "aurora-framework/aurora": "1.*",
       "twig/twig": "~1.0",
+      "aurora-framework/aurora": "1.*",
       "aurora-framework/twig": "1.*",
       "aurora-framework/voodorm": "1.*"
    },
@@ -15,7 +15,8 @@
 
       "twig/twig": "dev-master",
       "aurora-framework/aurora": "dev-master@dev",
-      "aurora-framework/twig": "dev-master@dev"
+      "aurora-framework/twig": "dev-master@dev",
+      "aurora-framework/voodorm": "1.*"
    },
    "prefer-stable": true,
    "autoload": {
