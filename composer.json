@@ -6,9 +6,9 @@
       "php": ">=5.6.8",
 
       "twig/twig": "~1.0",
-      "aurora-framework/aurora": "1.*",
-      "aurora-framework/twig": "1.*",
-      "aurora-framework/voodorm": "1.*"
+      "aurora-framework/aurora": "~1.0",
+      "aurora-framework/twig": "~1.0",
+      "aurora-framework/voodorm": "~1.0"
    },
    "require-dev": {
       "php": ">=5.6.8",
