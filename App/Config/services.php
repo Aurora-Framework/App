@@ -10,7 +10,7 @@ $Injector->define("Aurora\\Http\\Request", [
 ]);
 
 $Loader = new Twig_Loader_Filesystem(APP."View/");
-$Twig = new Twig_Environment($loader, array(
+$Twig = new Twig_Environment($Loader, array(
 	'cache' => APP."Storage/Cache/",
 ));
 $Twig->addExtension(new Aurora\Twig\Extension());
