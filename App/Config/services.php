@@ -19,4 +19,9 @@ $Injector->define("Aurora\\MVC\\Presenter", [
 	":Engine" => $Twig
 ]);
 
+$Injector->share("Aurora\\Service\\Model");
+$Injector->define("Aurora\\Service\\Model", [
+	":Connection" => (new PDO($Config->get("database.dns")))
+]);
+
 return $Injector;
