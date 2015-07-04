@@ -16,7 +16,6 @@
       "aurora-framework/twig": "dev-master@dev",
       "aurora-framework/voodorm": "1.*"
    },
-   "prefer-stable": true,
    "autoload": {
       "psr-4": {
          "App\\": "App//"
