@@ -13,8 +13,8 @@
    "require-dev": {
       "php": ">=5.6.8",
 
-      "aurora-framework/aurora": "dev-master@dev",
       "twig/twig": "dev-master",
+      "aurora-framework/aurora": "dev-master@dev",
       "aurora-framework/twig": "dev-master@dev"
    },
    "prefer-stable": true,
