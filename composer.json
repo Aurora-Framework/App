@@ -7,7 +7,8 @@
 
       "aurora-framework/aurora": "1.*",
       "twig/twig:": "~1.0",
-      "aurora-framework/twig": "1.*"
+      "aurora-framework/twig": "1.*",
+      "aurora-framework/voodorm": "1.*"
    },
    "require-dev": {
       "php": ">=5.6.8",
