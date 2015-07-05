@@ -13,15 +13,10 @@ $Loader = new Twig_Loader_Filesystem(APP."View/");
 $Twig = new Twig_Environment($Loader, array(
 	'cache' => APP."Storage/Cache/",
 ));
-$Twig->addExtension(new Aurora\Twig\Extension());
+$Twig->addExtension(new Aurora\Twig\Extension($Injector));
 
 $Injector->define("Aurora\\MVC\\Presenter", [
 	":Engine" => $Twig
-]);
-
-$Injector->share("Aurora\\Service\\Model");
-$Injector->define("Aurora\\Service\\Model", [
-	":Connection" => (new PDO($Config->get("database.dns")))
 ]);
 
 return $Injector;
