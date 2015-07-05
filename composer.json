@@ -8,12 +8,6 @@
       "aurora-framework/aurora": "~1.0",
       "aurora-framework/twig": "~1.0"
    },
-   "require-dev": {
-      "php": ">=5.6.8",
-      "twig/twig": "dev-master",
-      "aurora-framework/aurora": "dev-master@dev",
-      "aurora-framework/twig": "dev-master@dev"
-   },
    "autoload": {
       "psr-4": {
          "App\\": "App//"
