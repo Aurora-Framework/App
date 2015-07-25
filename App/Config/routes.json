@@ -1,0 +1,9 @@
+{
+   "baseUri": "/Sample",
+   "routes": {
+      "/?{user}": [
+         "GET",
+         ["App\\Presenter\\Home", "index"]
+      ]
+   }
+}

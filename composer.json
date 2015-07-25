@@ -3,7 +3,7 @@
    "description": "Application in Aurora",
    "license": "MIT",
    "require": {
-      "php": ">=5.6.8",
+      "php": ">=5.6",
       "twig/twig": "~1.0",
       "aurora-framework/aurora": "~1.0",
       "aurora-framework/twig": "~1.0"

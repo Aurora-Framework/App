@@ -26,13 +26,21 @@ $Config = include APP . "Config/config.php";
 /**
 * Read the services
 */
-$Injector = include APP . "Config/services.php";
+$Resolver = include APP . "Config/services.php";
 
-$Application = new Aurora\Application($Config, $Injector);
+$Application = new Aurora\Application($Config, $Resolver);
 
 /**
  * Routes
  */
-$found = include APP . "Config/routes.php";
+$JSONAdapter = new Aurora\Adapter\JSON(APP."Config/");
+$Router = (new Aurora\Router\Loader($JSONAdapter->loadFile("routes")))->load();
+try {
+   $found = $Router->findRoute($Router->findRequestMethod(), $Router->findUri());
+} catch (RouteNotFoundException $Exception) {
+
+} catch (MethodNotAllowedException $Exception) {
+
+}
 
 $Application->run($found["action"], $found["params"]);

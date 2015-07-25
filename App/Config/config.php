@@ -7,24 +7,24 @@
 return new Aurora\Config([
 
 	'database'	=> [
-		'database_type' => 'mysql',
-		'server'        => '',
-		'username'      => '',
-		'password'      => '',
-		'database_name' => '',
-		'charset'       => 'utf8mb4',
+		'database_type'	=> 'mysql',
+		'server'				=> '',
+		'username'			=> '',
+		'password'			=> '',
+		'database_name'	=> '',
+		'charset'			=> 'utf8mb4',
 	],
 
 	'application'	=> [
-		"environment"       => "development", // production, development
-		"language_path"     => APP . 'Lang/{LANGUAGE}/{LANGUAGE}.ini',
-		"language"          => "en", // Default language
-		"language_fallback" => "en", // Fallback language when file isn"t available for default language
-		"locale"            => "en_US", // PHP set_locale() setting, null to not set
-		"encoding"          => "UTF-8",
-		"server_gmt_offset" => 0,
-		"default_timezone"  => null,
-		"baseURI"           => "/",
+		"environment"			=> "development", // production, development
+		"language_path"		=> APP . 'Lang/{LANGUAGE}/{LANGUAGE}.ini',
+		"language"				=> "en", // Default language
+		"language_fallback"	=> "en", // Fallback language when file isn"t available for default language
+		"locale"					=> "en_US", // PHP set_locale() setting, null to not set
+		"encoding"				=> "UTF-8",
+		"server_gmt_offset"	=> 0,
+		"default_timezone"	=> null,
+		"baseURI"				=> "/Sample",
 	],
 
 	"security" => [
@@ -56,6 +56,7 @@ return new Aurora\Config([
 
 
 	"cookie" => [
+
 		/* Number of seconds before the cookie expires */
 		"expiration"  => 0,
 
@@ -78,6 +79,6 @@ return new Aurora\Config([
 		"lifetime"	=> 86400,
 		"path"		=> '/',
 		"domain"		=> null,
-		"secure"		=> false
+		"secure"		=> false,
 	]
 ]);

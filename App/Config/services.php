@@ -1,22 +1,30 @@
 <?php
-$Injector = new Aurora\Injector();
+$Resolver = new Aurora\Injector();
 
-$Injector->define("Aurora\\Http\\Request", [
-	":GET" => $_GET,
-	":POST" => $_POST,
-	":COOKIE" => $_COOKIE,
-	":FILES" => $_FILES,
-	":SERVER" => $_SERVER,
-]);
+$Resolver->define("Aurora\\Http\\Request", [
+	":get"    => $_GET,
+	":post"   => $_POST,
+	":cookie" => $_COOKIE,
+	":files"  => $_FILES,
+	":server" => $_SERVER,
+], true);
 
 $Loader = new Twig_Loader_Filesystem(APP."View/");
-$Twig = new Twig_Environment($Loader, array(
+$Twig = new Twig_Environment($Loader, [
 	'cache' => APP."Storage/Cache/",
-));
-$Twig->addExtension(new Aurora\Twig\Extension($Injector));
+]);
+$Twig->addExtension(new Aurora\Twig\Extension($Resolver));
 
-$Injector->define("Aurora\\MVC\\Presenter", [
+$Resolver->define("Aurora\\MVC\\View", [
 	":Engine" => $Twig
 ]);
 
-return $Injector;
+$Resolver->prepare("Aurora\\MVC\\Presenter", function($Instance) use ($Config) {
+	$Instance->Cookie = new Aurora\Http\Cookie();
+	$Instance->Cookie->raw = true;
+
+	$Instance->Session = new Aurora\Session(null, $Config->get("session"));
+	$Instance->Session->start();
+});
+
+return $Resolver;
